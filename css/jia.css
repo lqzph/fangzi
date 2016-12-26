@@ -1,0 +1,105 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.scene{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    perspective: 300px;
+}
+.room{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+}
+.room .panel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+}
+.room .panel:nth-child(1){
+    /*background: url(../img/tianhua.jpg);*/
+    background: #6BC4E9;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    box-shadow: 0 0 100px #000 inset;
+
+}
+.room .panel:nth-child(2){
+    background: #6BC4E9;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    box-shadow: 0 0 100px #000 inset;
+
+}
+.room .panel:nth-child(3){
+
+    background: url(../img/qiang.jpg) no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 0 0 100px #000 inset;
+
+}
+.room .panel:nth-child(4){
+    background: #6BC4E9;
+    transform: rotateY(90deg);
+    transform-origin: right;
+    box-shadow: 0 0 100px #000 inset;
+
+}
+.room .panel:nth-child(5){
+    background: url(../img/diban.jpg);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    box-shadow: 0 0 100px #000 inset;
+
+}
+.room .panel:nth-child(6){
+    background:#ccc url(../img/chuanghu.jpg) no-repeat ;
+    background-size: 100% 100%;
+    /*background-size: contain;*/
+    box-shadow: 0 0 100px #000 inset;
+    /*transform: translateZ(1500px);*/
+
+}
+
+.left .iconfont{
+    width:100px;height:100px;
+    float:left;margin:230px 100px;
+    background:#999;
+    box-shadow: 0 0 5px #aaa;
+    border-radius: 5px;
+    color:orangered;font-size:100px;text-align: center;
+    line-height: 100px;
+    transform: rotate3d(0,1,0,180deg);
+    text-shadow:0 0 3px red ;overflow: hidden;
+
+}
+
+.right .iconfont{
+  width: 100px;
+    height: 100px;
+    float:left;
+    margin: 200px 100px;
+    color: red;
+    font-size: 100px;
+    text-shadow: 5px 0 0 red;
+    line-height: 100px;
+    text-align: center;
+    background: #666;
+    transform: rotate3d(0,1,0,180deg);
+    overflow: hidden;
+
+}
